@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>QR امروز</title>
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2>QR Code امروز</h2>
+    <img id="qr" src="" alt="QR امروز" style="max-width: 90%; margin-top: 20px;">
+  </div>
+  <script>
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById("qr").src = `qr-codes/${today}.png`;
+  </script>
+</body>
+</html>

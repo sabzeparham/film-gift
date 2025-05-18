@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>هدیه فیلم روزانه</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 هدیه فیلم روزانه</h1>
+    <p>لطفاً شماره همراه خود را وارد کنید:</p>
+    <input type="tel" id="phone" placeholder="مثلاً 09123456789">
+    <button onclick="showFilms()">ادامه</button>
+
+    <div id="films" class="hidden">
+      <p>یکی از فیلم‌های پیشنهادی را انتخاب کنید:</p>
+      <div class="film-grid" id="filmList"></div>
+    </div>
+  </div>
+
+  <script src="films.js"></script>
+  <script src="firebase.js"></script>
+</body>
+</html>
